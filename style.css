@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 *,*:before,*:after{
 	box-sizing: border-box;
 	margin: 0;
@@ -17,7 +18,7 @@ header{
 .container{
 	width: 100%;
 	max-width: 1170px;
-	margin: 0 auto;
+	margin: 60px auto;
 }
 .flex{
 	display: flex;
@@ -25,6 +26,21 @@ header{
 h3{
 	font-size: 2rem;
 	text-transform: uppercase;
+	text-align: center;
+}
+p{
+	font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.paragraph{
+	font-size: 2.5rem;
+	margin: 60px auto 30px;
+}
+.little-paragraph{
+	margin: 20px;
+	font-size: 1.3rem;
 	text-align: center;
 }
 ul{
@@ -39,6 +55,7 @@ ul{
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
+	margin: 0 auto;
 	padding: 15px;
 	color: white;
 	border-bottom: 1px white solid;
@@ -49,14 +66,12 @@ ul{
 	align-items: center;
 	cursor: pointer;
 }
-
 .type-a ul{
 	flex-wrap: wrap;
 }
 .type-a li{
 	flex-shrink: 0;
 }
-
 .type-b .container{
 	height: 100%;
 	display: flex;
@@ -82,26 +97,54 @@ ul{
 }
 .type-b{
 	display: flex;
+	gap: 2rem;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-evenly;
+	padding: 40px;
 }
 .type-b-child{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
+.type-b-child .paragraph{
+	margin: 0px;
+}
 .type-b-child:nth-child(1){
 	color: white;
+	max-width: 600px;
 }
 .type-b-child:nth-child(2){
-	padding: 10px;
+	padding: 20px;
 	gap: 1.5rem;
 	background: white;
 }
-.type-c{
-	background: rgba(0, 191, 255, 0.5);
+.type-b-child input{
+	height: 30px;
+	padding-left: 10px;
+}
+.type-b-child .btn{
+	background: rgb(0, 191, 255);
+	padding: 12px 16px;
+	text-transform: uppercase;
 	color: white;
+	cursor: pointer;
+}
+.type-c{
+	background: rgba(0, 191, 255, 0.6);
+	color: white;
+}
+.type-c .container{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 20px;
+}
+.type-c .container p{
+	width: 35%;
+	min-width: 240px;
+	text-align: left;
 }
 .type-d{
 	background: url('img/type-d-bc.png');
@@ -114,6 +157,7 @@ ul{
 	align-items: center;
 }
 .type-d .bottom-box{
+	padding: 80px 0;
 	display: flex;
 	gap: 30px;
 	justify-content: space-evenly;
@@ -125,8 +169,10 @@ ul{
 	border-radius: 50%;
 }
 .type-d .bottom-box .bottom-box-child{
-	width: 270px;
-	height: 270px;
+	width: 25%;
+	max-width: 250px;
+	min-width: 160px;
+	aspect-ratio: 1;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -153,16 +199,9 @@ ul{
 	background-size: cover;
 	background-position: center;
 }
-.type-e{
-
-}
-.type-e h3{
-	font-size: 3rem;
-	text-align: center;
-}
 .type-e .bottom-box{
 	display: flex;
-	gap: 10px;
+	gap: 2rem;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
@@ -265,7 +304,7 @@ ul{
 	align-items: center;
 	justify-content: center;
 }
-.type-g-child h3, p{
+.type-g-child h3, .type-g-child p{
 	padding-bottom: 24px;
 	text-align: center;
 }
@@ -340,6 +379,7 @@ ul{
 }
 .type-h-child-elem .flex .flex-item{
 	display: flex;
+	gap: 1rem;
 }
 .type-h-child-elem .flex .flex-item img{
 	width: 18px;
@@ -376,8 +416,6 @@ ul{
 	justify-content: center;
 }
 .type-j{
-	height: 330px;
-	padding-top: 80px;
 	display: flex;
 	gap: 30px;
 	flex-wrap: wrap;
@@ -393,6 +431,36 @@ ul{
 .type-j-child li{
 	margin: 5px 0;
 }
+.type-j-child input{
+	height: 30px;
+	padding-left: 10px;
+}
+.type-j-child .btn{
+	width: 100px;
+	height: 40px;
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	color: white;
+	background: rgb(0, 191, 255);
+}
+.type-j-child-elem{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.type-j-child .img-box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: rgb(0, 191, 255);
+}
+
 @media (max-width: 1280px){
 	.container{
 /*		padding: 0 40px;*/
