@@ -260,7 +260,7 @@ ul{
 	top: 50%;
 	right: 10px;
 	transform: translateY(-50%);
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	margin: 0;
 	padding: 0;
 }
@@ -269,7 +269,7 @@ ul{
 	top: 50%;
 	left: 10px;
 	transform: translateY(-50%);
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	text-decoration: line-through;
 	font-weight: 600;
 }
